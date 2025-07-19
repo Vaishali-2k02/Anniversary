@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bhavya ❤️</title>
     <link rel="stylesheet" href="new.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
   </head>
   <body>
     <section class="animation-box">
@@ -39,4 +40,27 @@ Vaise text mein bhi kitna hi bolti hun na mai 😂. But I just wanted to say I l
       </div>
     </section>
   </body>
+  <div id="tsparticles"></div>
+
+<script>
+tsParticles.load("tsparticles", {
+  fullScreen: { enable: true, zIndex: -1 },
+  particles: {
+    number: { value: 15 },
+    shape: { type: "circle" },
+    size: { value: 5, random: true },
+    color: { value: "#ffffff" },
+    opacity: { value: 0.3 },
+    move: {
+      enable: true,
+      speed: 0.6,
+      direction: "top",
+      outModes: { default: "out" }
+    }
+  },
+  background: {
+    color: "#000000"
+  }
+});
+</script>
 </html>
